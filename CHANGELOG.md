@@ -1,3 +1,10 @@
+# 1.0.0 (2022-09-01)
+
+
+### Features
+
+* create task at database ([da3e24b](https://github.com/edwardramirez31/mf-todo-form/commit/da3e24b96d5b9de0fb5adadf0001559e6e3cd6c8))
+
 # [1.2.0](https://github.com/edwardramirez31/micro-frontend-template/compare/v1.1.2...v1.2.0) (2022-08-31)
 
 
