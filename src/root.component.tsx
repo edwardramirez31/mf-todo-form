@@ -1,25 +1,74 @@
-const Root: React.FC<{ name: string }> = ({ name }) => {
+import React from 'react';
+
+import { TextField, Button, Icon, Paper, Typography } from '@mui/material';
+import { Formik } from 'formik';
+import { Provider, useDispatch } from 'react-redux';
+import * as Yup from 'yup';
+
+import store from './store';
+import { addTask } from './store/slices/task';
+
+const Form: React.VFC = () => {
+  const dispatch = useDispatch();
+
+  const formSchema = Yup.object().shape({
+    text: Yup.string().required('This is required'),
+  });
+
   return (
-    <section>
-      <div className="jumbotron">
-        <h1 className="display-4">{name} is mounted!</h1>
-        <p className="lead">
-          This is a simple hero unit, a simple jumbotron-style component for calling extra attention
-          to featured content or information.
-        </p>
-        <hr className="my-4" />
-        <p>
-          It uses utility classNames for typography and spacing to space content out within the
-          larger container.
-        </p>
-        <p className="lead">
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-          <a className="btn btn-primary btn-lg" href="#" role="button">
-            Learn more
-          </a>
-        </p>
-      </div>
-    </section>
+    <Formik
+      initialValues={{
+        text: '',
+      }}
+      validationSchema={formSchema}
+      onSubmit={(data, helpers): void => {
+        dispatch(addTask({ ...data, completed: false }));
+        helpers.resetForm();
+      }}
+    >
+      {({ values, errors, touched, handleChange, handleSubmit, handleBlur }): JSX.Element => (
+        <form
+          style={{
+            display: 'flex',
+            alignItems: 'baseline',
+            justifyContent: 'space-around',
+          }}
+          onSubmit={handleSubmit}
+        >
+          <TextField
+            label="Add a text"
+            style={{ width: '85%' }}
+            name="text"
+            value={values.text}
+            onChange={handleChange}
+            error={Boolean(touched.text && errors.text)}
+            helperText={touched.text && errors.text}
+            onBlur={handleBlur}
+            variant="standard"
+          />
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            endIcon={<Icon>send</Icon>}
+            style={{ width: '10%' }}
+          >
+            Add
+          </Button>
+        </form>
+      )}
+    </Formik>
+  );
+};
+
+const Root: React.FC = () => {
+  return (
+    <Provider store={store}>
+      <Typography variant="h3">To-Do App</Typography>
+      <Paper style={{ padding: 20 }} sx={{ mb: '15px' }}>
+        <Form />
+      </Paper>
+    </Provider>
   );
 };
 
