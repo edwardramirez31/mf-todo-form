@@ -7,15 +7,8 @@ export interface DjangoTask {
   id: number;
 }
 
-export interface Task {
-  text: string;
-  completed: boolean;
-  id: number;
-  isUpdating: boolean;
-}
-
 interface InitialState {
-  tasks: Task[];
+  tasks: DjangoTask[];
   loading: boolean;
   error: string | null;
 }
@@ -35,7 +28,7 @@ export const taskSlice = createSlice({
     },
     addTaskSuccess: (state, action: PayloadAction<DjangoTask>) => {
       // { id: 1, text: "Hello", completed: false }
-      state.tasks = [...state.tasks, { ...action.payload, isUpdating: false }];
+      state.tasks = [...state.tasks, { ...action.payload }];
       state.loading = false;
     },
     addTaskError: (state, action: PayloadAction<string>) => {

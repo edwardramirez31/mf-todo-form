@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import { taskSubscription } from '@mf-app/utility';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { all, put, call, takeEvery } from 'redux-saga/effects';
 import type { CallEffect, PutEffect } from 'redux-saga/effects';
@@ -14,6 +15,7 @@ function* addTaskSaga({
   try {
     const newTask = yield call([DjangoTodo, 'createTask'], data);
     yield put(addTaskSuccess(newTask));
+    taskSubscription.next(newTask);
   } catch (err) {
     const error = err as ErrorObject;
     yield put(addTaskError(error.message));
