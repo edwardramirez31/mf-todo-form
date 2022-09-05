@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.1.0...v1.2.0) (2022-09-05)
+
+
+### Features
+
+* deploy utility module to S3 ([0383c47](https://github.com/edwardramirez31/mf-todo-form/commit/0383c470c303f7f95d903e89fa2105711ea2043d))
+
 # [1.1.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.0.0...v1.1.0) (2022-09-05)
 
 
