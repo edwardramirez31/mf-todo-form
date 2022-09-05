@@ -91,5 +91,5 @@
     "yup": "^0.32.9"
   },
   "types": "dist/mf-todo-form.d.ts",
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.0.0...v1.1.0) (2022-09-05)
+
+
+### Features
+
+* send new task to subscribed micro frontend handlers ([b2675b4](https://github.com/edwardramirez31/mf-todo-form/commit/b2675b458619720ca997699ad82004274c89abea))
+
 # 1.0.0 (2022-09-01)
 
 
