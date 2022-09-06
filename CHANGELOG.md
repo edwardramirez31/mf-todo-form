@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.2.0...v1.3.0) (2022-09-06)
+
+
+### Features
+
+* change app title ([57babe9](https://github.com/edwardramirez31/mf-todo-form/commit/57babe9c6732e73d76cb9374992c7a25f02f306e))
+
 # [1.2.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.1.0...v1.2.0) (2022-09-05)
 
 
