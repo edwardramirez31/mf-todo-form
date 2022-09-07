@@ -1627,10 +1627,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@mf-app/utility@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@mf-app/utility/-/utility-1.2.1.tgz#1e74d481a9c2c54d816ecdc7846f2f0972764c80"
-  integrity sha512-11MtO9Sh9xfmYBykSfD/8cRn+bgjbh+jI6WevqMDyNeacow1dob9mw2TXxOECgZQmb54hOA/RqWaMjdzSOKS0g==
+"@mf-app/utility@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@mf-app/utility/-/utility-1.4.0.tgz#1e330e71805a14588e8f7b70b7e2be63927abfce"
+  integrity sha512-q5UJ2oW+QTwzGROYkWyBJWEVf+SDB9HIO/B8wHtvkga4xBIH/lNA6K7QxCFrw6Xu3lhSca6o0bvWLczYGlUMEg==
   dependencies:
     "@types/jest" "^27.0.1"
     "@types/react" "^17.0.19"
