@@ -76,7 +76,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
-    "@mf-app/utility": "^1.2.1",
+    "@mf-app/utility": "^1.4.1",
     "@mui/material": "^5.10.3",
     "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.21.4",
@@ -91,5 +91,5 @@
     "yup": "^0.32.9"
   },
   "types": "dist/mf-todo-form.d.ts",
-  "version": "1.3.1"
+  "version": "1.3.2"
 }
