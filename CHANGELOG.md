@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/edwardramirez31/mf-todo-form/compare/v1.3.0...v1.3.1) (2022-09-08)
+
+
+### Bug Fixes
+
+* invalidate build files from CloudFront cache ([4dfc5d9](https://github.com/edwardramirez31/mf-todo-form/commit/4dfc5d9cee1b81e5b25cf00f93c139269635e4df))
+
 # [1.3.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.2.0...v1.3.0) (2022-09-06)
 
 
