@@ -72,7 +72,7 @@ const Form: React.VFC = () => {
 const Root: React.FC = () => {
   return (
     <Provider store={store}>
-      <Typography variant="h3">To Do App</Typography>
+      <Typography variant="h3">To-Do List</Typography>
       <Form />
     </Provider>
   );
