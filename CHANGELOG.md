@@ -1,3 +1,11 @@
+## [1.3.3](https://github.com/edwardramirez31/mf-todo-form/compare/v1.3.2...v1.3.3) (2022-09-10)
+
+
+### Bug Fixes
+
+* bump @mf-app/utility from 1.2.1 to 1.4.1 ([964e07c](https://github.com/edwardramirez31/mf-todo-form/commit/964e07c296c790da51fa96d40eed3f5b77682cdc))
+* bump actions/checkout from 2 to 3 ([305d4da](https://github.com/edwardramirez31/mf-todo-form/commit/305d4da7e4fe917b3070a963504077680be2c604))
+
 ## [1.3.2](https://github.com/edwardramirez31/mf-todo-form/compare/v1.3.1...v1.3.2) (2022-09-08)
 
 
