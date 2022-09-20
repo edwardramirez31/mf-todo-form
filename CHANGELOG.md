@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/edwardramirez31/mf-todo-form/compare/v1.3.3...v1.4.0) (2022-09-20)
+
+
+### Features
+
+* change project title ([4e909a3](https://github.com/edwardramirez31/mf-todo-form/commit/4e909a3293f0c7b7ac6a183351c17dd2836a639f))
+
 ## [1.3.3](https://github.com/edwardramirez31/mf-todo-form/compare/v1.3.2...v1.3.3) (2022-09-10)
 
 
